@@ -1,7 +1,9 @@
+import styled from "styled-components";
+
 const Hiring = () => {
   return (
     <>
-      <div className="row align-items-center hiring">
+      <Div className="row align-items-center hiring">
         <div class="row align-items-center">
           <div class="col-sm offset-md-1 mb-4 mb-md-0">
             <h6 class="title text-light">Want to work with me?</h6>
@@ -15,9 +17,23 @@ const Hiring = () => {
             </button>
           </div>
         </div>
-      </div>
+      </Div>
       ;
     </>
   );
 };
+
+const Div = styled.div`
+  .hiring {
+    margin: auto;
+    text-align: center;
+  }
+  .hiring p,
+  h6 {
+    text-align: justify;
+  }
+  .hire-button {
+    text-align: justify;
+  }
+`;
 export default Hiring;

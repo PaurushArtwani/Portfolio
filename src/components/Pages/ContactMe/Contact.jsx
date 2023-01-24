@@ -1,12 +1,15 @@
+import styled from "styled-components";
+import SectionHeading from "../SectionHeading";
 const Contact = () => {
   return (
     <>
-      <div className="text-center p-5">
-        <p class="section-subtitle-about">How can you communicate?</p>
-        <h6 class="section-title-about mb-6 text-center">Contact Me</h6>
-      </div>
+      <SectionHeading
+        subtitle={"How can you communicate?"}
+        title={"Contact Me"}
+      ></SectionHeading>
+
       <form className="contact-form col-md-10 col-lg-8 m-auto">
-        <div className="form-row">
+        <Div className="form-row row">
           <div className="form-group col-sm-6">
             <input
               type="text"
@@ -23,7 +26,7 @@ const Contact = () => {
               required=""
             />
           </div>
-        </div>
+        </Div>
         <div className="form-text row">
           <div className="form-group col-sm-12">
             <textarea
@@ -47,4 +50,17 @@ const Contact = () => {
     </>
   );
 };
+const Div = styled.div`
+  .form-row > .col,
+  .form-row > [class*="col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  .form-row {
+    display: flex;
+  }
+`;
 export default Contact;

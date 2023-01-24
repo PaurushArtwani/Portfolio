@@ -1,12 +1,15 @@
 import Card from "react-bootstrap/Card";
+import styled from "styled-components";
+import SectionHeading from "../SectionHeading";
 const Services = () => {
   return (
     <>
-      <div className="text-center p-3">
-        <p class="section-subtitle-about">What I Do ?</p>
-        <h6 class="section-title-about mb-6 text-center">Service</h6>
-      </div>
-      <div className="row p-5 services">
+      <SectionHeading
+        subtitle={"What I Do ?"}
+        title={"Service"}
+      ></SectionHeading>
+
+      <Div className="row p-5 services">
         <div className="col-md-6 col-lg-3 services-items">
           <Card>
             <Card.Body>
@@ -40,9 +43,45 @@ const Services = () => {
             </Card.Body>
           </Card>
         </div>
-      </div>
+      </Div>
     </>
   );
 };
+const Div = styled.div`
+  .services-items img {
+    margin-top: 40px;
+    width: 55px;
+    margin-bottom: 25px;
+    transition: all 0.65s ease-in;
+  }
+  .services-items .card-body {
+    text-align: center;
+  }
+  .services-items .card {
+    position: relative;
+    min-height: 230px;
+    border: 1px solid #dee2e6;
+    overflow: hidden;
+    border-radius: 3px;
+  }
+  .tittle {
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1300 - 300)));
+  }
 
+  .service-description {
+    background-color: #fff;
+    position: absolute;
+    bottom: -100%;
+    transition: all 0.65s ease-in;
+  }
+
+  .services-items .card:hover .service-description {
+    bottom: 0;
+  }
+
+  .services-items:hover img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+`;
 export default Services;

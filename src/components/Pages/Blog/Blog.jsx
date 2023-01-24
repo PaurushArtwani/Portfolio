@@ -1,15 +1,17 @@
-import "../Maincontainer.css";
+import "../../Maincontainer.css";
 import { BsHeart, BsChatLeft } from "react-icons/bs";
+import SectionHeading from "../SectionHeading";
+import styled from "styled-components";
 
 const Blog = () => {
   return (
     <>
-      <div className="text-center p-5">
-        <p class="section-subtitle-about">Recent Posts?</p>
-        <h6 class="section-title-about mb-6 text-center">Blog</h6>
-      </div>
+      <SectionHeading
+        subtitle={"Recent Posts?"}
+        title={"Blog"}
+      ></SectionHeading>
 
-      <div className="row blog ">
+      <Div className="row blog ">
         <div className="col-md-4 blog-img">
           <img src="img-1.jpg" alt="" />
         </div>
@@ -47,9 +49,9 @@ const Blog = () => {
             Read more>>
           </a>
         </div>
-      </div>
+      </Div>
 
-      <div className="row blog ">
+      <Div className="row blog ">
         <div className="col-md-4 blog-img">
           <img src="img-2.jpg" alt="" />
         </div>
@@ -87,8 +89,51 @@ const Blog = () => {
             Read more>>
           </a>
         </div>
-      </div>
+      </Div>
     </>
   );
 };
+const Div = styled.div`
+  .blog-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .blog-img {
+    padding: 0px;
+  }
+  .blog {
+    margin-bottom: 20px;
+  }
+  .blog-card-title {
+    font-weight: 100 !important;
+    margin-top: 20px;
+  }
+  .blog {
+    border: 1px solid #dee2e6;
+  }
+  .blog-card-caption {
+    margin: 15px 0 15px !important;
+  }
+  .blog-card-caption a {
+    margin-right: 10px;
+    color: #444;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    opacity: 0.7;
+    font-size: 13px;
+  }
+  .social-media-logos svg path {
+    color: red;
+    font-size: 23px;
+    background: transparent;
+  }
+  .blog-card-link {
+    text-decoration: none;
+    margin-top: 20px;
+    display: block;
+    font-size: 13px;
+    color: #444;
+  }
+`;
 export default Blog;

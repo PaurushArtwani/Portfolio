@@ -1,13 +1,15 @@
-import "../Maincontainer.css";
+import styled from "styled-components";
+import "../../Maincontainer.css";
+import SectionHeading from "../SectionHeading";
 const Testmonial = () => {
   return (
     <>
-      <div className="text-center p-5">
-        <p class="section-subtitle-about">What Think Client About Me ?</p>
-        <h6 class="section-title-about mb-6 text-center">Testmonial</h6>
-      </div>
+      <SectionHeading
+        subtitle={"What Think Client About Me ?"}
+        title={"Testmonial"}
+      ></SectionHeading>
 
-      <div className="row testmonial-section">
+      <Div className="row testmonial-section">
         <div className="col-md-6 ">
           <div class="testimonial-card">
             <div class="testimonial-card-img-holder">
@@ -38,8 +40,34 @@ const Testmonial = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Div>
     </>
   );
 };
+const Div = styled.div`
+  .testimonial-card-img-holder {
+    min-width: 45px;
+    max-width: 45px;
+    z-index: 999;
+  }
+  .testimonial-card-body {
+    text-align: left;
+    border: 1px solid #dee2e6;
+    background: #fff;
+    padding: 20px 20px 20px 60px;
+    border-radius: 0;
+  }
+  .testimonial-card-img {
+    background: #fff;
+    padding: 4px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+  .testimonial-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+`;
 export default Testmonial;

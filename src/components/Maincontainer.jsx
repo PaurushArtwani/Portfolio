@@ -1,16 +1,16 @@
 import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import Navbarsection from "./HeaderSection/Navbarsection";
-import Introduction from "./Herosection/Introduction";
-import Aboutme from "./AboutMe/Aboutme";
-import Services from "./Services/Services";
-import Portfolio from "./Portfolio/Portfolio";
-import Pricing from "./Pricing/Pricing";
-import Hiring from "./Hire/Hiring";
-import Testmonial from "./Testmonial/Testmonial";
-import Blog from "./Blog/Blog";
-import Contact from "./ContactMe/Contact";
-import Copyright from "./footer/Copyright";
+import Introduction from "./Pages/Herosection/Introduction";
+import Aboutme from "./Pages/AboutMe/Aboutme";
+import Services from "./Pages/Services/Services";
+import Portfolio from "./Pages/Portfolio/Portfolio";
+import Pricing from "./Pages/Pricing/Pricing";
+import Hiring from "./Pages/Hire/Hiring";
+import Testmonial from "./Pages/Testmonial/Testmonial";
+import Blog from "./Pages/Blog/Blog";
+import Contact from "./Pages/ContactMe/Contact";
+import Copyright from "./Pages/footer/Copyright";
 
 const Maincontainer = () => {
   return (
