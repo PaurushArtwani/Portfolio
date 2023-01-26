@@ -1,6 +1,7 @@
 import { Button } from "react-bootstrap";
 import styled from "styled-components";
 import "../../Maincontainer.css";
+import "../../../style/color.css";
 <link
   href="https://fonts.googleapis.com/css?family=Bungee+Inline"
   rel="stylesheet"
@@ -18,7 +19,7 @@ const Introduction = () => {
         }}
       >
         <div className="col-12 col-md-12  p-5">
-          <Div className="my-introduction">
+          <MyIntroduction className="my-introduction">
             <span className="up">HI!</span>
             <span className="down">I am Paurush</span>
             <span className="down">Artwani</span>
@@ -28,14 +29,14 @@ const Introduction = () => {
                 Visit My Works
               </Button>
             </div>
-          </Div>
+          </MyIntroduction>
         </div>
       </div>
     </>
   );
 };
 
-const Div = styled.div`
+const MyIntroduction = styled.div`
   max-width: 550px;
   padding-top: 10%;
   padding-bottom: 10%;
@@ -45,7 +46,7 @@ const Div = styled.div`
   .up {
     font-size: 70px;
     font-weight: 1000;
-    color: #444;
+    color: var(--heading);
     margin-bottom: 5px;
     position: relative;
     display: block;
@@ -60,16 +61,16 @@ const Div = styled.div`
     font-weight: 1000;
     opacity: 0.8;
     font-family: "Baloo Paaji", cursive;
-    color: #212529;
+    color: var(--heading);
   }
   .header-subtitle {
-    letter-spacing: calc(1px + (5 - 1) * ((100vw - 300px) / (1300 - 300)));
+    letter-spacing: 0.4em;
     font-size: 25px;
     opacity: 0.8;
     margin-top: -10px;
     margin-bottom: 20px;
     font-weight: 100;
-    color: #111;
+    color: var(--heading);
   }
   .hero-section {
     background-image: url(header.jpg);

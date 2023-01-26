@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import "../../Maincontainer.css";
-import SectionHeading from "../SectionHeading";
+import SectionHeading from "../../BuildingBlocks/SectionHeading";
 const Testmonial = () => {
   return (
     <>
@@ -9,7 +9,7 @@ const Testmonial = () => {
         title={"Testmonial"}
       ></SectionHeading>
 
-      <Div className="row testmonial-section">
+      <Testimonial className="row testmonial-section">
         <div className="col-md-6 ">
           <div class="testimonial-card">
             <div class="testimonial-card-img-holder">
@@ -40,11 +40,11 @@ const Testmonial = () => {
             </div>
           </div>
         </div>
-      </Div>
+      </Testimonial>
     </>
   );
 };
-const Div = styled.div`
+const Testimonial = styled.div`
   .testimonial-card-img-holder {
     min-width: 45px;
     max-width: 45px;

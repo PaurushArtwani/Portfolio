@@ -1,5 +1,5 @@
 import Card from "react-bootstrap/Card";
-import SectionHeading from "../SectionHeading";
+import SectionHeading from "../../BuildingBlocks/SectionHeading";
 const Portfolio = () => {
   return (
     <>
@@ -8,10 +8,7 @@ const Portfolio = () => {
         title={"Portfolio"}
       ></SectionHeading>
 
-      {/* <div className="text-center p-3">
-        <p class="section-subtitle-about"></p>
-        <h6 class="section-title-about mb-6 text-center"></h6>
-      </div> */}
+      
 
       <div className="row p-5">
         <div className="col-md-4 portfolio-card">

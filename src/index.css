@@ -6,10 +6,10 @@ h5,
 h6 {
   font-weight: 1000;
   font-family: "Baloo Paaji", cursive;
-  color: #695aa6;
+  color: var(--section-heading);
 }
 p {
-  font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
+  font-size: 1em;
   font-weight: 100;
   opacity: 1;
   color: #111;

@@ -1,6 +1,6 @@
 import "../../Maincontainer.css";
 import { BsHeart, BsChatLeft } from "react-icons/bs";
-import SectionHeading from "../SectionHeading";
+import SectionHeading from "../../BuildingBlocks/SectionHeading";
 import styled from "styled-components";
 
 const Blog = () => {
@@ -11,7 +11,7 @@ const Blog = () => {
         title={"Blog"}
       ></SectionHeading>
 
-      <Div className="row blog ">
+      <MyBlog className="row blog ">
         <div className="col-md-4 blog-img">
           <img src="img-1.jpg" alt="" />
         </div>
@@ -49,9 +49,9 @@ const Blog = () => {
             Read more>>
           </a>
         </div>
-      </Div>
+      </MyBlog>
 
-      <Div className="row blog ">
+      <MyBlog className="row blog ">
         <div className="col-md-4 blog-img">
           <img src="img-2.jpg" alt="" />
         </div>
@@ -89,11 +89,11 @@ const Blog = () => {
             Read more>>
           </a>
         </div>
-      </Div>
+      </MyBlog>
     </>
   );
 };
-const Div = styled.div`
+const MyBlog = styled.div`
   .blog-img img {
     width: 100%;
     height: 100%;

@@ -1,11 +1,11 @@
 import { Button } from "react-bootstrap";
 import styled from "styled-components";
 import "../../Maincontainer.css";
-import SectionHeading from "../SectionHeading";
+import SectionHeading from "../../BuildingBlocks/SectionHeading";
 const Aboutme = () => {
   return (
     <>
-      <Div className="row p-5">
+      <AboutMe className="row p-5">
         <div className="col-12 col-md-4 about-img-holder">
           <img src="man.png" alt="" />
         </div>
@@ -30,18 +30,17 @@ const Aboutme = () => {
             <Button>Download CV</Button>
           </div>
         </div>
-      </Div>
+      </AboutMe>
     </>
   );
 };
-const Div = styled.div`
+const AboutMe = styled.div`
   .about-img-holder img {
     width: 100%;
-    height: 100%;
   }
 
   .section-description-about {
-    font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
+    font-size: 1em;
     font-weight: 100;
     opacity: 1;
     color: #111;

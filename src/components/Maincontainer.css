@@ -1,7 +1,6 @@
 @media only screen and (max-width: 767px) {
-  .hlBpIo {
-    padding-left: 11%;
-    padding-right: 3%;
+  .my-introduction {
+    padding-left: 60px;
   }
   .services-items .card {
     margin-bottom: 14px;
@@ -9,7 +8,8 @@
     min-height: 106px;
   }
   .portfolio-card .card {
-    width: 60%;
+    /* display: flex; */
+    max-width: 250px;
     margin: auto;
     margin-top: 14px;
   }
@@ -18,7 +18,7 @@
     height: 97%;
     margin: auto;
   }
-  .sc-ftTHYK {
+  .form-row {
     text-align: center;
   }
   .blog-img {

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import SectionHeading from "../SectionHeading";
+import SectionHeading from "../../BuildingBlocks/SectionHeading";
 const Contact = () => {
   return (
     <>
@@ -9,7 +9,7 @@ const Contact = () => {
       ></SectionHeading>
 
       <form className="contact-form col-md-10 col-lg-8 m-auto">
-        <Div className="form-row row">
+        <ContactMe className="form-row row">
           <div className="form-group col-sm-6">
             <input
               type="text"
@@ -26,7 +26,7 @@ const Contact = () => {
               required=""
             />
           </div>
-        </Div>
+        </ContactMe>
         <div className="form-text row">
           <div className="form-group col-sm-12">
             <textarea
@@ -50,7 +50,7 @@ const Contact = () => {
     </>
   );
 };
-const Div = styled.div`
+const ContactMe = styled.div`
   .form-row > .col,
   .form-row > [class*="col-"] {
     padding-right: 5px;

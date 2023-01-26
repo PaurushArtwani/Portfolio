@@ -11,14 +11,12 @@ import styled from "styled-components";
 const Copyright = () => {
   return (
     <>
-      <Div className="footer row p-4">
-        <Div className="col-12 col-md-6">
-          <p className="mb-0">
-            Copyright 2023 © DevCRUD Distribution ThemeWagon
-          </p>
-        </Div>
-        <Div className="col-12 col-md-6 social-links">
-          <Div>
+      <Footer className="footer row p-4">
+        <Footer className="col-12 col-md-6">
+          <p className="mb-0">Copyright 2023 © Paurush Artwani</p>
+        </Footer>
+        <Footer className="col-12 col-md-6 social-links">
+          <Footer>
             <a>
               <BsFacebook />
             </a>
@@ -42,13 +40,13 @@ const Copyright = () => {
             <a>
               <BsFillRssFill />
             </a>
-          </Div>
-        </Div>
-      </Div>
+          </Footer>
+        </Footer>
+      </Footer>
     </>
   );
 };
-const Div = styled.div`
+const Footer = styled.div`
   .footer .social-links a {
     padding: 9px;
     height: 40px;
