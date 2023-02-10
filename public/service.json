@@ -1,0 +1,24 @@
+{
+  "servicecard": [
+    {
+      "image": "html.png",
+      "heading": "Html",
+      "description": "I have created the projects in HTML"
+    },
+    {
+      "image": "css.png",
+      "heading": "Css",
+      "description": "I do designing with the help of CSS and used in multiple Projects"
+    },
+    {
+      "image": "javascript.png",
+      "heading": "Javascript",
+      "description": "I have created some projects for practising JavaScript Languages."
+    },
+    {
+      "image": "react.png",
+      "heading": "React",
+      "description": "I have created some projects with the help of React Js"
+    }
+  ]
+}
