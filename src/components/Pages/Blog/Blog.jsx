@@ -1,102 +1,54 @@
 import "../../Maincontainer.css";
+import { useState } from "react";
+import { useEffect } from "react";
 import { BsHeart, BsChatLeft } from "react-icons/bs";
 import SectionHeading from "../../BuildingBlocks/SectionHeading";
 import styled from "styled-components";
 
 const Blog = () => {
+  const [data, setData] = useState();
+  useEffect(() => {
+    fetch("project.json").then((project) => {
+      project.json().then((project) => {
+        setData(project);
+        console.log(project);
+      });
+    });
+  }, []);
   return (
     <>
       <SectionHeading
-        subtitle={"Recent Posts?"}
-        title={"Blog"}
+        subtitle={"Recent Projects?"}
+        title={"Projects"}
       ></SectionHeading>
 
-      <MyBlog className="row blog ">
-        <div className="col-md-4 blog-img">
-          <img src="img-1.jpg" alt="" />
-        </div>
-        <div className="col-md-8 blog-content">
-          <h5 className="blog-card-title">Consectetur adipisicing elit</h5>
-          <p className="blog-card-caption">
-            <a>By: Admin</a>
-            <a className="social-media-logos" href="#">
-              <BsHeart className="heart" />
-              &nbsp; 234
-            </a>
-            <a href="#" className="social-media-logos">
-              <BsChatLeft />
-              &nbsp;123
-            </a>
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-            nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id
-            deleniti. Rerum debitis facilis accusantium neque numquam mollitia
-            modi quasi distinctio.
-          </p>
-          <p>
-            <b>
-              Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid
-              consequuntur repudiandae.
-            </b>
-          </p>
-          <p>
-            Magnam in repellat enim harum omnis aperiam! Explicabo illo,
-            commodi, dolor blanditiis cupiditate harum nisi vero accusamus
-            laudantium voluptatibus dolores quae obcaecati.
-          </p>
-          <a href="#" class="blog-card-link">
-            Read more>>
-          </a>
-        </div>
-      </MyBlog>
-
-      <MyBlog className="row blog ">
-        <div className="col-md-4 blog-img">
-          <img src="img-2.jpg" alt="" />
-        </div>
-        <div className="col-md-8 blog-content">
-          <h5 className="blog-card-title">Explicabo illo</h5>
-          <p className="blog-card-caption">
-            <a>By: Admin</a>
-            <a className="social-media-logos" href="#">
-              <BsHeart className="heart" />
-              &nbsp; 234
-            </a>
-            <a href="#" className="social-media-logos">
-              <BsChatLeft />
-              &nbsp;123
-            </a>
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-            nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id
-            deleniti. Rerum debitis facilis accusantium neque numquam mollitia
-            modi quasi distinctio.
-          </p>
-          <p>
-            <b>
-              Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid
-              consequuntur repudiandae.
-            </b>
-          </p>
-          <p>
-            Magnam in repellat enim harum omnis aperiam! Explicabo illo,
-            commodi, dolor blanditiis cupiditate harum nisi vero accusamus
-            laudantium voluptatibus dolores quae obcaecati.
-          </p>
-          <a href="#" class="blog-card-link">
-            Read more>>
-          </a>
-        </div>
-      </MyBlog>
+      {data &&
+        data.projects.map((record) => {
+          return (
+            <MyBlog className="row blog ">
+              <div className="col-md-4 blog-img">
+                <img src={record.image} alt="" />
+              </div>
+              <div className="col-md-8 blog-content">
+                <h4 className="blog-card-title py-2">{record.projectname}</h4>
+                <p className="py-2">Team Member:{record.members} </p>
+                <p className="py-1">Language Used : {record.language}</p>
+                <p>My Role : {record.role}</p>
+                <p>About Project:{record.description}</p>
+              </div>
+            </MyBlog>
+          );
+        })}
     </>
   );
 };
 const MyBlog = styled.div`
   .blog-img img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 72%;
+    padding: 17px;
+    padding-left: 4em;
+    padding-right: 4em;
   }
   .blog-img {
     padding: 0px;
@@ -107,6 +59,10 @@ const MyBlog = styled.div`
   .blog-card-title {
     font-weight: 100 !important;
     margin-top: 20px;
+  }
+  .blog-content > p {
+    font-family: monospace;
+    color: #6f6f6f;
   }
   .blog {
     border: 1px solid #dee2e6;

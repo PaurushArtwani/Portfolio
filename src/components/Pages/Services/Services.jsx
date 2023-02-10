@@ -1,39 +1,39 @@
 import SectionHeading from "../../BuildingBlocks/SectionHeading";
-import SectionService from "../../BuildingBlocks/SectionService";
+import { useEffect } from "react";
 import styled from "styled-components";
-// import "../../../../public/pencil-case.svg";
+import "../../Maincontainer.css";
+import SectionService from "../../BuildingBlocks/SectionService";
+import { useState } from "react";
+
 const Services = () => {
+  const [data, setData] = useState();
+  useEffect(() => {
+    fetch("service.json").then((service) => {
+      service.json().then((service) => {
+        setData(service);
+      });
+    });
+  }, []);
+
   return (
     <>
       <SectionHeading
         subtitle={"What I Do ?"}
-        title={"Service"}
+        title={"Technology"}
       ></SectionHeading>
       <Service className="row p-5 services">
-        <div className="col-md-3 col-lg-3 services-items">
-          <SectionService
-            serviceimage={require("../../Assets/pencil-case.svg.jpg")}
-            tittle={"Paurush"}
-          ></SectionService>
-        </div>
-        <div className="col-md-3 col-lg-3 services-items">
-          <SectionService
-            serviceimage={require("../../Assets/analytics.svg.jpg")}
-            tittle={"Paurush"}
-          ></SectionService>
-        </div>
-        <div className="col-md-3 col-lg-3 services-items">
-          <SectionService
-            serviceimage={require("../../Assets/responsive.svg.jpg")}
-            tittle={"Paurush"}
-          ></SectionService>
-        </div>
-        <div className="col-md-3 col-lg-3 services-items">
-          <SectionService
-            serviceimage={require("../../Assets/analytics.svg.jpg")}
-            tittle={"Paurush"}
-          ></SectionService>
-        </div>
+        {data &&
+          data.servicecard.map((record, index) => {
+            return (
+              <div key={index} className="col-md-3 col-lg-3 services-items">
+                <SectionService
+                  image={record.image}
+                  heading={record.heading}
+                  description={record.description}
+                ></SectionService>
+              </div>
+            );
+          })}
       </Service>
     </>
   );

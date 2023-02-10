@@ -2,10 +2,7 @@ import { Button } from "react-bootstrap";
 import styled from "styled-components";
 import "../../Maincontainer.css";
 import "../../../style/color.css";
-<link
-  href="https://fonts.googleapis.com/css?family=Bungee+Inline"
-  rel="stylesheet"
-></link>;
+
 const Introduction = () => {
   return (
     <>
@@ -50,7 +47,7 @@ const MyIntroduction = styled.div`
     margin-bottom: 5px;
     position: relative;
     display: block;
-    font-family: "Baloo Paaji", cursive;
+    font-family: "Baloo Paaji ", cursive;
     opacity: 0.8;
   }
   .down {
@@ -60,7 +57,7 @@ const MyIntroduction = styled.div`
     display: block;
     font-weight: 1000;
     opacity: 0.8;
-    font-family: "Baloo Paaji", cursive;
+    font-family: "Baloo Paaji ", cursive;
     color: var(--heading);
   }
   .header-subtitle {

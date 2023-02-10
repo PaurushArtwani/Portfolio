@@ -13,7 +13,7 @@ const Contact = () => {
           <div className="form-group col-sm-6">
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               placeholder="Your Name"
               required=""
             />
@@ -21,7 +21,7 @@ const Contact = () => {
           <div className="form-group col-sm-6">
             <input
               type="email"
-              class="form-control"
+              className="form-control"
               placeholder="Enter Email"
               required=""
             />
@@ -33,16 +33,16 @@ const Contact = () => {
               name="comment"
               id="comment"
               rows="10"
-              class="form-control"
+              className="form-control"
               placeholder="Write Something"
             ></textarea>
           </div>
 
-          <div class="form-group col-sm-12 mt-3 text-center">
+          <div className="form-group col-sm-12 mt-3 text-center">
             <input
               type="submit"
               value="Send Message"
-              class="btn btn-outline-primary rounded"
+              className="btn btn-outline-primary rounded"
             />
           </div>
         </div>
@@ -52,7 +52,7 @@ const Contact = () => {
 };
 const ContactMe = styled.div`
   .form-row > .col,
-  .form-row > [class*="col-"] {
+  .form-row > [className*="col-"] {
     padding-right: 5px;
     padding-left: 5px;
   }

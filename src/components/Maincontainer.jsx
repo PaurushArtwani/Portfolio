@@ -16,8 +16,9 @@ const Maincontainer = () => {
   return (
     <>
       {/* <Navbarsection></Navbarsection> */}
-
-      <Introduction></Introduction>
+      <Container fluid>
+        <Introduction></Introduction>
+      </Container>
 
       <Container fluid>
         <Container>
@@ -33,9 +34,9 @@ const Maincontainer = () => {
         <Portfolio></Portfolio>
       </Container>
 
-      <Container>
+      {/* <Container>
         <Pricing></Pricing>
-      </Container>
+      </Container> */}
 
       <Container fluid style={{ background: "#695aa6" }}>
         <Container>

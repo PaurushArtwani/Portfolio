@@ -29,3 +29,6 @@
     margin-bottom: 14px;
   }
 }
+.portfolio .card {
+  min-height: 108px;
+}

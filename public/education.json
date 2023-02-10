@@ -1,0 +1,33 @@
+{
+  "education":[
+{
+  "id":"1",
+  "schoolimage":"tenth.jpg",
+  "stream":"10th",
+  "year":"2014-15",
+  "institutionname":"St Anthony's School"
+},
+    {
+  "id":"2",
+  "schoolimage":"twelve.png",
+  "stream":"12th",
+  "year":"2016-17",
+  "institutionname":"Central Academy School"
+},
+    {
+  "id":"3",
+  "schoolimage":"BCA.png",
+  "stream":"BCA",
+  "year":"2017-20",
+  "institutionname":"Rajasthan Vidhyapeeth College"
+},
+    {
+  "id":"4",
+  "schoolimage":"MCA.svg.png",
+  "stream":"MCA",
+  "year":"2020-22",
+  "institutionname":"Vellore Institute of Technology, Bhopal"
+}
+    
+  ]
+}
