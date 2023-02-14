@@ -44,11 +44,11 @@ const Maincontainer = () => {
         </Container>
       </Container>
 
-      <Container fluid>
+      {/* <Container fluid>
         <Container>
           <Testmonial></Testmonial>
         </Container>
-      </Container>
+      </Container> */}
 
       <Container fluid>
         <Container>
