@@ -11,6 +11,7 @@ const Copyright = () => {
         <Footer className="col-12 col-md-6 social-links">
           <Footer>
             <a
+              classname="social"
               target={"_blank"}
               href="https://www.facebook.com/people/Paurush-Artwani/pfbid0Q6zvzkYCdbzufnuktnkkKWm6Qt2M9euCX2yNpqA4MikDcQWhkWgBPMNNpJFTXtRRl/"
             >
@@ -18,6 +19,7 @@ const Copyright = () => {
             </a>
             &nbsp;
             <a
+              classname="social"
               target={"_blank"}
               href="https://www.instagram.com/paurush_artwani09/"
             >
@@ -25,6 +27,7 @@ const Copyright = () => {
             </a>
             &nbsp;
             <a
+              classname="social"
               target={"_blank"}
               href="https://www.linkedin.com/in/paurush-artwani-930648200/?trk=public_profile_browsemap_profile-result-card_result-card_full-click&originalSubdomain=in"
             >
@@ -58,6 +61,10 @@ const Footer = styled.div`
   .footer p {
     font-size: 23px;
     text-align: center;
+  }
+  .social {
+    text-decoration: none;
+    color: black;
   }
 `;
 export default Copyright;

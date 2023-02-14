@@ -27,7 +27,11 @@ const Aboutme = () => {
             always seek to achieve my best version.
           </p>
           <div>
-            <Button>Download CV</Button>
+            <Button>
+              <a href="../../Assets/paurush.pdf" target={"_blank"}>
+                Download CV{" "}
+              </a>
+            </Button>
           </div>
         </div>
       </AboutMe>
