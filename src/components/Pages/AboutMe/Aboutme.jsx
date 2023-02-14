@@ -16,15 +16,16 @@ const Aboutme = () => {
             align="left"
           ></SectionHeading>
           <p className="section-description-about">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Repudiandae aliquid ad provident aut fuga animi soluta quae eos non
-            cupiditate voluptates dolorem, doloremque quos dicta quibusdam
-            impedit iure nemo a iste <br />
-            culpa! Quasi quibusdam hic recusandae delectus velit officiis
-            explicabo voluptatibus! Nemo esse similique, voluptates labore
-            distinctio, placeat explicabo facilis molestias, blanditiis culpa
-            iusto voluptatem ratione eligendi a, quia temporibus velit vero ipsa
-            sint ex voluptatum expedita aliquid! Debitis, nam!
+            My name is Paurush Artwani, I am a computer technician with a great
+            passion for programming. I am passionate about delivering solutions
+            that add to people's lives and at the same time challenge me.
+            Improved my skills as a Front-End Developer and an efficient Scrum
+            Master I develop websites and applications using React, HTML, CSS,
+            and JavaScript. I am familiar with developing layouts that are
+            provided to me. I'm always improving myself with each project they
+            put in my hands. I am a dedicated person who pursues his dreams,
+            hardworking and results oriented, I always seek to achieve my best
+            version.
           </p>
           <div>
             <Button>Download CV</Button>
