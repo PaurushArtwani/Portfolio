@@ -23,7 +23,18 @@ const Introduction = () => {
             <span className="header-subtitle">FRONTEND WEB DESIGNER</span>
             <div>
               <Button className="my-works" type="primary">
-                Visit My Works
+                <a
+                  href="mailto:paurushartwani09@hmail.com"
+                  className="custom-button"
+                >
+                  Email
+                </a>
+              </Button>
+              &nbsp;&nbsp;&nbsp;
+              <Button className="my-works" type="primary">
+                <a href="tel:+917023933047" className="custom-button">
+                  Contact Us
+                </a>
               </Button>
             </div>
           </MyIntroduction>
@@ -77,6 +88,10 @@ const MyIntroduction = styled.div`
     margin-top: 20px;
     border-radius: 20px;
     padding: 8px 15px;
+  }
+  .custom-button {
+    color: white !important;
+    text-decoration: none;
   }
 `;
 

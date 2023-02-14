@@ -1,11 +1,4 @@
-import {
-  BsFacebook,
-  BsTwitter,
-  BsGoogle,
-  BsPinterest,
-  BsInstagram,
-  BsFillRssFill,
-} from "react-icons/bs";
+import { BsFacebook, BsGoogle, BsLinkedin, BsInstagram } from "react-icons/bs";
 import styled from "styled-components";
 
 const Copyright = () => {
@@ -17,29 +10,27 @@ const Copyright = () => {
         </Footer>
         <Footer className="col-12 col-md-6 social-links">
           <Footer>
-            <a>
+            <a
+              target={"_blank"}
+              href="https://www.facebook.com/people/Paurush-Artwani/pfbid0Q6zvzkYCdbzufnuktnkkKWm6Qt2M9euCX2yNpqA4MikDcQWhkWgBPMNNpJFTXtRRl/"
+            >
               <BsFacebook />
             </a>
             &nbsp;
-            <a>
-              <BsTwitter />
-            </a>
-            &nbsp;
-            <a>
-              <BsGoogle />
-            </a>
-            &nbsp;
-            <a>
-              <BsPinterest />
-            </a>
-            &nbsp;
-            <a>
+            <a
+              target={"_blank"}
+              href="https://www.instagram.com/paurush_artwani09/"
+            >
               <BsInstagram />
             </a>
             &nbsp;
-            <a>
-              <BsFillRssFill />
+            <a
+              target={"_blank"}
+              href="https://www.linkedin.com/in/paurush-artwani-930648200/?trk=public_profile_browsemap_profile-result-card_result-card_full-click&originalSubdomain=in"
+            >
+              <BsLinkedin />
             </a>
+            &nbsp;
           </Footer>
         </Footer>
       </Footer>
@@ -56,9 +47,6 @@ const Footer = styled.div`
     text-align: center;
     border: 2px solid #6c757d;
     color: #6c757d;
-  }
-  .social-links a:hover {
-    background: #0d6efd;
   }
 
   .social-links {

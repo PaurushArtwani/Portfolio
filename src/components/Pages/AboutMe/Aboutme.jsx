@@ -19,13 +19,12 @@ const Aboutme = () => {
             My name is Paurush Artwani, I am a computer technician with a great
             passion for programming. I am passionate about delivering solutions
             that add to people's lives and at the same time challenge me.
-            Improved my skills as a Front-End Developer and an efficient Scrum
-            Master I develop websites and applications using React, HTML, CSS,
-            and JavaScript. I am familiar with developing layouts that are
-            provided to me. I'm always improving myself with each project they
-            put in my hands. I am a dedicated person who pursues his dreams,
-            hardworking and results oriented, I always seek to achieve my best
-            version.
+            Improved my skills as a Front-End Developer. I develop websites and
+            applications using React, HTML, CSS, and JavaScript. I am familiar
+            with developing layouts that are provided to me. I'm always
+            improving myself with each project put in my hands. I am a dedicated
+            person who pursues his dreams, hardworking and results oriented, I
+            always seek to achieve my best version.
           </p>
           <div>
             <Button>Download CV</Button>

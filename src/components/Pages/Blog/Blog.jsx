@@ -1,7 +1,7 @@
 import "../../Maincontainer.css";
 import { useState } from "react";
 import { useEffect } from "react";
-import { BsHeart, BsChatLeft } from "react-icons/bs";
+
 import SectionHeading from "../../BuildingBlocks/SectionHeading";
 import styled from "styled-components";
 
