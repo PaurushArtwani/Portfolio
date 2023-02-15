@@ -27,13 +27,13 @@ const Introduction = () => {
                   href="mailto:paurushartwani09@hmail.com"
                   className="custom-button"
                 >
-                  Email
+                  Email Me
                 </a>
               </Button>
               &nbsp;&nbsp;&nbsp;
               <Button className="my-works" type="primary">
                 <a href="tel:+917023933047" className="custom-button">
-                  Contact Us
+                  Call Me
                 </a>
               </Button>
             </div>
