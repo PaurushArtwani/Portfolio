@@ -28,8 +28,8 @@ const Aboutme = () => {
           </p>
           <div>
             <Button>
-              <a href="../../Assets/paurush.pdf" target={"_blank"}>
-                Download CV{" "}
+              <a href="PaurushArtwaniCV.pdf" download className="resume">
+                Download CV
               </a>
             </Button>
           </div>
@@ -55,5 +55,10 @@ const AboutMe = styled.div`
     background: transparent;
     color: #695aa6;
   }
+  .resume{
+    color:color: rgb(105, 90, 166);
+    text-decoration:none;
+  }
+  
 `;
 export default Aboutme;
